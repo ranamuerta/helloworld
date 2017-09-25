@@ -3,10 +3,6 @@ stages:
   - build
   - test
 
-artifacts:
-  paths:
-    - helloworld
-
 before_script:
   - ls -la
 
@@ -15,6 +11,10 @@ build_hello:
     - ls -la
     - pwd && go build
   stage: build
+  artifacts:
+    paths:
+      - helloworld
+
 
 test:
   script:
