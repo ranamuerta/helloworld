@@ -3,6 +3,10 @@ stages:
   - build
   - test
 
+artifacts:
+  paths:
+    - helloworld
+
 before_script:
   - ls -la
 
