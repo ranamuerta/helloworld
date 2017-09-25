@@ -2,7 +2,11 @@ image: golang:1.8
 stages:
   - build
 
-job_name:
+before_script:
+  - ls -la
+
+build_hello:
   script:
-    - ./build.sh
+    - ls -la
+    - go build
   stage: build
