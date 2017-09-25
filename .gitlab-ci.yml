@@ -8,5 +8,5 @@ before_script:
 build_hello:
   script:
     - ls -la
-    - go build
+    - pwd && go build
   stage: build
