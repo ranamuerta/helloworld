@@ -1,6 +1,7 @@
 image: golang:1.8
 stages:
   - build
+  - test
 
 before_script:
   - ls -la
@@ -10,3 +11,8 @@ build_hello:
     - ls -la
     - pwd && go build
   stage: build
+
+test:
+  script:
+    - go test -v
+  stage: test
