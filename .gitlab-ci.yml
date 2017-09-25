@@ -1,0 +1,8 @@
+image: golang:1.8
+stages:
+  - build
+
+job_name:
+  script:
+    - build.sh
+  stage: build

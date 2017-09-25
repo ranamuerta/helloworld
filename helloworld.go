@@ -7,8 +7,16 @@ import(
 
 func main(){
 
-	fmt.Println("Hello World")
+	fmt.Println(hw())
 
+	env()
+}
+
+func hw() string{
+	return "Hello world"
+}
+
+func env(){
 	for _, env := range os.Environ(){
 		fmt.Println("env: ", env)
 	}
