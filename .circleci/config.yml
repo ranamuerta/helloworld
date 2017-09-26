@@ -23,8 +23,10 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: env
+
       - run: go get -v -t -d ./...
 
+      - run: go build -v
       - store_artifacts:
           path: helloworld
 
