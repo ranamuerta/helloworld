@@ -26,7 +26,6 @@ jobs:
       - run: go get -v -t -d ./...
 
       - store_artifacts:
-        path: helloworld
-        destination: helloworld
+          path: helloworld
 
       - run: go test -v ./...
